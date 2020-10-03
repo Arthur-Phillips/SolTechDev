@@ -7,7 +7,7 @@ Validate::Validate(QList<QChar> kpadInput)
 
 bool Validate::validate_keypad_input()
 {
-  /*  if(keypadInput.size() == 5){
+    if(keypadInput.size() == 5){
         QString one = keypadInput.takeFirst(), two = keypadInput.takeFirst(),\
                 three = keypadInput.takeFirst(), four = keypadInput.takeFirst(),\
                 five = keypadInput.takeFirst(), combined = one+two+three+four+five;
@@ -19,6 +19,6 @@ bool Validate::validate_keypad_input()
             return true;
         }
         return false;
-    }*/
+    }
     return false;
 }

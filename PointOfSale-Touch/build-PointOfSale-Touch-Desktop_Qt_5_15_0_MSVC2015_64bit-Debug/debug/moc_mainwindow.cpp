@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[1];
-    char stringdata0[11];
+    QByteArrayData data[15];
+    char stringdata0[503];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,10 +32,35 @@ struct qt_meta_stringdata_MainWindow_t {
     )
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
-QT_MOC_LITERAL(0, 0, 10) // "MainWindow"
+QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
+QT_MOC_LITERAL(1, 11, 20), // "append_to_pwValidate"
+QT_MOC_LITERAL(2, 32, 0), // ""
+QT_MOC_LITERAL(3, 33, 27), // "on_pushButton_clear_clicked"
+QT_MOC_LITERAL(4, 61, 27), // "on_pushButton_login_clicked"
+QT_MOC_LITERAL(5, 89, 39), // "on_pushButton_addAnotherProdu..."
+QT_MOC_LITERAL(6, 129, 36), // "on_pushButton_removeAProduct_..."
+QT_MOC_LITERAL(7, 166, 53), // "on_comboBox_selectTransaction..."
+QT_MOC_LITERAL(8, 220, 4), // "arg1"
+QT_MOC_LITERAL(9, 225, 55), // "on_comboBox_uniqueTransaction..."
+QT_MOC_LITERAL(10, 281, 43), // "on_pushButton_nextTransaction..."
+QT_MOC_LITERAL(11, 325, 47), // "on_pushButton_previousTransac..."
+QT_MOC_LITERAL(12, 373, 45), // "on_pushButton_editTransaction..."
+QT_MOC_LITERAL(13, 419, 37), // "on_pushButton_saveTransaction..."
+QT_MOC_LITERAL(14, 457, 45) // "on_pushButton_printTransactio..."
 
     },
-    "MainWindow"
+    "MainWindow\0append_to_pwValidate\0\0"
+    "on_pushButton_clear_clicked\0"
+    "on_pushButton_login_clicked\0"
+    "on_pushButton_addAnotherProduct_clicked\0"
+    "on_pushButton_removeAProduct_clicked\0"
+    "on_comboBox_selectTransactionType_currentIndexChanged\0"
+    "arg1\0on_comboBox_uniqueTransactionNumber_currentIndexChanged\0"
+    "on_pushButton_nextTransactionNumber_clicked\0"
+    "on_pushButton_previousTransactionNumber_clicked\0"
+    "on_pushButton_editTransactionSettings_clicked\0"
+    "on_pushButton_saveTransaction_clicked\0"
+    "on_pushButton_printTransactionSummary_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -45,22 +70,65 @@ static const uint qt_meta_data_MainWindow[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       0,    0, // methods
+      12,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
 
+ // slots: name, argc, parameters, tag, flags
+       1,    0,   74,    2, 0x08 /* Private */,
+       3,    0,   75,    2, 0x08 /* Private */,
+       4,    0,   76,    2, 0x08 /* Private */,
+       5,    0,   77,    2, 0x08 /* Private */,
+       6,    0,   78,    2, 0x08 /* Private */,
+       7,    1,   79,    2, 0x08 /* Private */,
+       9,    1,   82,    2, 0x08 /* Private */,
+      10,    0,   85,    2, 0x08 /* Private */,
+      11,    0,   86,    2, 0x08 /* Private */,
+      12,    0,   87,    2, 0x08 /* Private */,
+      13,    0,   88,    2, 0x08 /* Private */,
+      14,    0,   89,    2, 0x08 /* Private */,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,    8,
+    QMetaType::Void, QMetaType::QString,    8,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+
        0        // eod
 };
 
 void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    Q_UNUSED(_o);
-    Q_UNUSED(_id);
-    Q_UNUSED(_c);
-    Q_UNUSED(_a);
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        auto *_t = static_cast<MainWindow *>(_o);
+        Q_UNUSED(_t)
+        switch (_id) {
+        case 0: _t->append_to_pwValidate(); break;
+        case 1: _t->on_pushButton_clear_clicked(); break;
+        case 2: _t->on_pushButton_login_clicked(); break;
+        case 3: _t->on_pushButton_addAnotherProduct_clicked(); break;
+        case 4: _t->on_pushButton_removeAProduct_clicked(); break;
+        case 5: _t->on_comboBox_selectTransactionType_currentIndexChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 6: _t->on_comboBox_uniqueTransactionNumber_currentIndexChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 7: _t->on_pushButton_nextTransactionNumber_clicked(); break;
+        case 8: _t->on_pushButton_previousTransactionNumber_clicked(); break;
+        case 9: _t->on_pushButton_editTransactionSettings_clicked(); break;
+        case 10: _t->on_pushButton_saveTransaction_clicked(); break;
+        case 11: _t->on_pushButton_printTransactionSummary_clicked(); break;
+        default: ;
+        }
+    }
 }
 
 QT_INIT_METAOBJECT const QMetaObject MainWindow::staticMetaObject = { {
@@ -89,6 +157,17 @@ void *MainWindow::qt_metacast(const char *_clname)
 int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QMainWindow::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 12)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 12;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 12)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 12;
+    }
     return _id;
 }
 QT_WARNING_POP

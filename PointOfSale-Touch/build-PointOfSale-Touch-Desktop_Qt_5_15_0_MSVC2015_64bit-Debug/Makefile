@@ -259,6 +259,7 @@ Makefile: ..\PointOfSale-Touch\PointOfSale-Touch.pro F:\Qt2\5.15.0\msvc2015_64\m
 		F:\Qt2\5.15.0\msvc2015_64\mkspecs\features\qt_config.prf \
 		F:\Qt2\5.15.0\msvc2015_64\mkspecs\win32-msvc\qmake.conf \
 		F:\Qt2\5.15.0\msvc2015_64\mkspecs\features\spec_post.prf \
+		.qmake.stash \
 		F:\Qt2\5.15.0\msvc2015_64\mkspecs\features\exclusive_builds.prf \
 		F:\Qt2\5.15.0\msvc2015_64\mkspecs\common\msvc-version.conf \
 		F:\Qt2\5.15.0\msvc2015_64\mkspecs\features\toolchain.prf \
@@ -288,7 +289,6 @@ Makefile: ..\PointOfSale-Touch\PointOfSale-Touch.pro F:\Qt2\5.15.0\msvc2015_64\m
 		F:\Qt2\5.15.0\msvc2015_64\lib\Qt5Gui.prl \
 		F:\Qt2\5.15.0\msvc2015_64\lib\Qt5Core.prl \
 		F:\Qt2\5.15.0\msvc2015_64\lib\qtmain.prl \
-		.qmake.stash \
 		F:\Qt2\5.15.0\msvc2015_64\mkspecs\features\build_pass.prf \
 		F:\Qt2\5.15.0\msvc2015_64\lib\Qt5Widgetsd.prl \
 		F:\Qt2\5.15.0\msvc2015_64\lib\Qt5Guid.prl \
@@ -470,6 +470,7 @@ F:\Qt2\5.15.0\msvc2015_64\mkspecs\features\qt_functions.prf:
 F:\Qt2\5.15.0\msvc2015_64\mkspecs\features\qt_config.prf:
 F:\Qt2\5.15.0\msvc2015_64\mkspecs\win32-msvc\qmake.conf:
 F:\Qt2\5.15.0\msvc2015_64\mkspecs\features\spec_post.prf:
+.qmake.stash:
 F:\Qt2\5.15.0\msvc2015_64\mkspecs\features\exclusive_builds.prf:
 F:\Qt2\5.15.0\msvc2015_64\mkspecs\common\msvc-version.conf:
 F:\Qt2\5.15.0\msvc2015_64\mkspecs\features\toolchain.prf:
@@ -499,7 +500,6 @@ F:\Qt2\5.15.0\msvc2015_64\lib\Qt5Widgets.prl:
 F:\Qt2\5.15.0\msvc2015_64\lib\Qt5Gui.prl:
 F:\Qt2\5.15.0\msvc2015_64\lib\Qt5Core.prl:
 F:\Qt2\5.15.0\msvc2015_64\lib\qtmain.prl:
-.qmake.stash:
 F:\Qt2\5.15.0\msvc2015_64\mkspecs\features\build_pass.prf:
 F:\Qt2\5.15.0\msvc2015_64\lib\Qt5Widgetsd.prl:
 F:\Qt2\5.15.0\msvc2015_64\lib\Qt5Guid.prl:
